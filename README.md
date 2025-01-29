@@ -12,23 +12,23 @@ Identify nuanced opinions and mixed sentiments.
 Summarize sentiment trends and extract key themes.
 Create insightful visualizations to track sentiment trends over time.
 ### Expected Output
-Sentiment Analysis Model: A trained and validated model to classify text sentiment.
-Visualization Dashboards: Graphs and charts showcasing sentiment trends, keyword frequency, and emerging themes.
-Actionable Insights: Provide brands with tools to track public opinion and optimize marketing campaigns while addressing customer concerns.
+- Sentiment Analysis Model: A trained and validated model to classify text sentiment.
+- Visualization Dashboards: Graphs and charts showcasing sentiment trends, keyword frequency, and emerging themes.
+- Actionable Insights: Provide brands with tools to track public opinion and optimize marketing campaigns while addressing customer concerns.
 ## Tools and Technologies
-###Programming Languages
-Python: Used for data collection, preprocessing, analysis, and model development.
-Libraries
-Data Collection: snscrape, PRAW.
-Preprocessing & Analysis: Pandas, NumPy, nltk, spaCy.
-Modeling: transformers, Scikit-learn, TensorFlow, PyTorch.
-Visualization: Matplotlib, Seaborn, Plotly.
-Deployment: AWS.
+### Programming Languages
+- Python: Used for data collection, preprocessing, analysis, and model development.
+### Libraries
+- Data Collection: snscrape, PRAW.
+- Preprocessing & Analysis: Pandas, NumPy, nltk, spaCy.
+- Modeling: transformers, Scikit-learn, TensorFlow, PyTorch.
+- Visualization: Matplotlib, Seaborn, Plotly.
+- Deployment: AWS.
 ### Platforms
-Google Colab or Jupyter Notebook for experimentation.
-Tableau or Power BI for advanced visualizations.
-AWS for hosting the application.
+- Google Colab or Jupyter Notebook for experimentation.
+- Tableau or Power BI for advanced visualizations.
+- AWS for hosting the application.
 ## Contact
 For questions, suggestions, or feedback, please reach out to:
-Parnavi: parnavi.sen.ps@gmail.com
-Navneet: navneetparabb20@gmail.com
+- Parnavi: parnavi.sen.ps@gmail.com
+- Navneet: navneetparabb20@gmail.com
