@@ -4,13 +4,13 @@ Monitoring Public Sentiment on Brands Using Social Media Data for Strategic Insi
 Public sentiment significantly impacts a brand's reputation and business success. However, many brands lack the tools to monitor and analyze the massive volumes of real-time feedback available on social media. This project focuses on leveraging social media data from platforms like Twitter and Reddit to monitor public sentiment, identify trends, and provide strategic insights for brands to improve decision-making and respond proactively. 
 ## Key Features and Goals
 ### Project Goals
-Collect, clean, and preprocess large datasets from Twitter and Reddit.
-Build and evaluate a sentiment analysis model to classify public opinion into Positive, Neutral, or Negative categories.
-Leverage Large Language Models (LLMs) to:
-Perform context-aware sentiment analysis.
-Identify nuanced opinions and mixed sentiments.
-Summarize sentiment trends and extract key themes.
-Create insightful visualizations to track sentiment trends over time.
+1. Collect, clean, and preprocess large datasets from Twitter and Reddit.
+2. Build and evaluate a sentiment analysis model to classify public opinion into Positive, Neutral, or Negative categories.
+3. Leverage Large Language Models (LLMs) to:
+- Perform context-aware sentiment analysis.
+- Identify nuanced opinions and mixed sentiments.
+- Summarize sentiment trends and extract key themes.
+4. Create insightful visualizations to track sentiment trends over time.
 ### Expected Output
 - Sentiment Analysis Model: A trained and validated model to classify text sentiment.
 - Visualization Dashboards: Graphs and charts showcasing sentiment trends, keyword frequency, and emerging themes.
