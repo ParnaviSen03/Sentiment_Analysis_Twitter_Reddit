@@ -1,5 +1,5 @@
-# Sentiment_Analysis_Twitter_Reddit /n
-Monitoring Public Sentiment on Brands Using Social Media Data for Strategic Insights /n
+# Sentiment_Analysis_Twitter_Reddit \n
+Monitoring Public Sentiment on Brands Using Social Media Data for Strategic Insights \n
 ## Project Overview /n
 Public sentiment significantly impacts a brand's reputation and business success. However, many brands lack the tools to monitor and analyze the massive volumes of real-time feedback available on social media. This project focuses on leveraging social media data from platforms like Twitter and Reddit to monitor public sentiment, identify trends, and provide strategic insights for brands to improve decision-making and respond proactively. /n
 Key Features and Goals
