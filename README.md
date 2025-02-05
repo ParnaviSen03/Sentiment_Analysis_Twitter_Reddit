@@ -11,6 +11,16 @@ Public sentiment significantly impacts a brand's reputation and business success
 - Identify nuanced opinions and mixed sentiments.
 - Summarize sentiment trends and extract key themes.
 4. Create insightful visualizations to track sentiment trends over time.
+### Dataset Details
+The dataset consists of Reddit posts scraped using PRAW (Python Reddit API Wrapper). It includes real-time Reddit data with the following variables:
+
+- Subreddit: The community where the post was published.
+- Timestamp: The time when the post was created.
+- Title:  The title of the Reddit post.
+- Body: The full text content of the post.
+- Comments: The number of comments on the post.
+- Number of Upvotes: The number of upvotes received.
+-Upvote Ratio: The ratio of upvotes to downvotes.
 ### Expected Output
 - Sentiment Analysis Model: A trained and validated model to classify text sentiment.
 - Visualization Dashboards: Graphs and charts showcasing sentiment trends, keyword frequency, and emerging themes.
