@@ -21,6 +21,16 @@ The dataset consists of Reddit posts scraped using PRAW (Python Reddit API Wrapp
 - Comments: The number of comments on the post.
 - Number of Upvotes: The number of upvotes received.
 -Upvote Ratio: The ratio of upvotes to downvotes.
+#### Preprocessing Steps
+##### Text Clean-Up
+- Standardize text to lowercase.
+- Remove special characters and numbers.
+- Removed stopwards
+##### NLP Breakdown
+- Tokenization: Splitting text into individual words or tokens.
+- Lemmatization: Reducing words to their base or root form.
+- Part of Speech (POS) Tagging: Identifying grammatical roles of words.
+
 ### Expected Output
 - Sentiment Analysis Model: A trained and validated model to classify text sentiment.
 - Visualization Dashboards: Graphs and charts showcasing sentiment trends, keyword frequency, and emerging themes.
