@@ -18,9 +18,9 @@ The dataset consists of Reddit posts scraped using PRAW (Python Reddit API Wrapp
 - Timestamp: The time when the post was created.
 - Title:  The title of the Reddit post.
 - Body: The full text content of the post.
-- Comments: The number of comments on the post.
+- Comments: The first comment on the post.
 - Number of Upvotes: The number of upvotes received.
--Upvote Ratio: The ratio of upvotes to downvotes.
+- Upvote Ratio: The ratio of upvotes to downvotes.
 #### Preprocessing Steps
 ##### Text Clean-Up
 - Standardize text to lowercase.
