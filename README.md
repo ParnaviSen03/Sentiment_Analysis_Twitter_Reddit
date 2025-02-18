@@ -31,6 +31,14 @@ The dataset consists of Reddit posts scraped using PRAW (Python Reddit API Wrapp
 - Lemmatization: Reducing words to their base or root form.
 - Part of Speech (POS) Tagging: Identifying grammatical roles of words.
 
+## Machine Learning Implementations
+### Traditional Machine Learning Models
+#### Vader Implementations
+- Applied VADER, a rule-based lexicon approach for sentiment classification, especially effective for short social media texts.
+- Useful for quick, lightweight sentiment classification before applying more complex deep learning models.
+### K-Means Clustering
+- Applied unsupervised learning to group similar posts based on sentiment and emerging discussion themes.
+- Helps in detecting latent sentiment groups and customer concerns without prior labels.
 ### Expected Output
 - Sentiment Analysis Model: A trained and validated model to classify text sentiment.
 - Visualization Dashboards: Graphs and charts showcasing sentiment trends, keyword frequency, and emerging themes.
