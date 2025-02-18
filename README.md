@@ -21,12 +21,12 @@ The dataset consists of Reddit posts scraped using PRAW (Python Reddit API Wrapp
 - Comments: The first comment on the post.
 - Number of Upvotes: The number of upvotes received.
 - Upvote Ratio: The ratio of upvotes to downvotes.
-#### Preprocessing Steps
-##### Text Clean-Up
+### Preprocessing Steps
+#### Text Clean-Up
 - Standardize text to lowercase.
 - Remove special characters and numbers.
 - Removed stopwards
-##### NLP Breakdown
+#### NLP Breakdown
 - Tokenization: Splitting text into individual words or tokens.
 - Lemmatization: Reducing words to their base or root form.
 - Part of Speech (POS) Tagging: Identifying grammatical roles of words.
