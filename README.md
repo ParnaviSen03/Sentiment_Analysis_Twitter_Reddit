@@ -36,7 +36,7 @@ The dataset consists of Reddit posts scraped using PRAW (Python Reddit API Wrapp
 #### Vader Implementations
 - Applied VADER, a rule-based lexicon approach for sentiment classification, especially effective for short social media texts.
 - Useful for quick, lightweight sentiment classification before applying more complex deep learning models.
-### K-Means Clustering
+#### K-Means Clustering
 - Applied unsupervised learning to group similar posts based on sentiment and emerging discussion themes.
 - Helps in detecting latent sentiment groups and customer concerns without prior labels.
 ### Deep Learning and Transformer-Based Models
