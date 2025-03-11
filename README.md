@@ -40,7 +40,7 @@ The dataset consists of Reddit posts scraped using PRAW (Python Reddit API Wrapp
 - Applied unsupervised learning to group similar posts based on sentiment and emerging discussion themes.
 - Helps in detecting latent sentiment groups and customer concerns without prior labels.
 ### Deep Learning and Transformer-Based Models
-## BERT (bert-base-uncased) Implementation
+#### BERT (bert-base-uncased) Implementation
 - A transformer-based model capable of capturing contextual sentiment by analyzing bidirectional word relationships.
 
 - Tokenization is performed using BERT tokenizer, which splits words into subwords for better handling of out-of-vocabulary words.
@@ -48,7 +48,7 @@ The dataset consists of Reddit posts scraped using PRAW (Python Reddit API Wrapp
 - Padding is applied to ensure all sequences have uniform lengths for batch processing.
 
 - Outperforms traditional models in understanding sentiment variations, sarcasm, and mixed opinions.
-## LLaMA (Large Language Model Meta AI) Implementation
+#### LLaMA (Large Language Model Meta AI) Implementation
 - A large-scale transformer-based model designed for nuanced sentiment understanding.
 
 - Excels at processing longer social media discussions and identifying subtle sentiment cues.
