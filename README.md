@@ -116,10 +116,6 @@ Two domains were analyzed:
 - Modeling: `transformers`, `scikit-learn`, `tensorflow`
 - Visualization: `matplotlib`, `seaborn`, `plotly`
 
-### Platforms
-- Google Colab / Jupyter – Training and experimentation  
-- AWS – For scalable deployment  
-- Tableau / Power BI – Dashboard visualization  
 
 ---
 
