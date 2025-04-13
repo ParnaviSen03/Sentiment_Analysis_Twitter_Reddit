@@ -6,15 +6,15 @@
 
 ---
 
-## 🧠 Project Overview
+## Project Overview
 
-Public sentiment significantly impacts a brand’s reputation, market value, and customer trust. Yet, many brands lack the tools to analyze real-time feedback shared by users on platforms like Twitter and Reddit. This project presents a robust NLP pipeline to **monitor, classify, and visualize sentiment trends** for brands using social media data.
+Public sentiment significantly impacts a brand’s reputation, market value, and customer trust. Yet, many brands lack the tools to analyze real-time feedback shared by users on platforms like Twitter and Reddit. This project presents a robust NLP pipeline to monitor, classify, and visualize sentiment trends for brands using social media data.
 
 We leverage both traditional models and state-of-the-art transformer-based deep learning architectures to understand nuanced, context-aware sentiment and provide actionable insights to brands for product and communication strategy.
 
 ---
 
-## 🎯 Project Goals
+## Project Goals
 
 - Collect and preprocess large-scale datasets from Twitter and Reddit.
 - Apply lexicon-based, clustering, and transformer models for sentiment classification.
@@ -28,7 +28,7 @@ We leverage both traditional models and state-of-the-art transformer-based deep 
 
 ---
 
-## 🗃️ Dataset Details
+## Dataset Details
 
 The Reddit dataset was collected using the PRAW (Python Reddit API Wrapper) and includes:
 
@@ -40,53 +40,53 @@ The Reddit dataset was collected using the PRAW (Python Reddit API Wrapper) and 
 - `Number of Comments`: Engagement metric.
 
 Two domains were analyzed:
-- **Athletic Apparel Brands**
-- **Technology Companies**
+- Athletic Apparel Brands
+- Technology Companies
 
 ---
 
-## 🧹 Preprocessing Pipeline
+## Preprocessing Pipeline
 
-### 🔤 Text Clean-Up
+### Text Clean-Up
 - Lowercased text
 - Removed punctuation, special characters, numbers
 - Removed stopwords (using NLTK)
 
-### 🧠 NLP Tasks
+### NLP Tasks
 - Tokenization  
 - Lemmatization  
 - POS tagging  
 - Emoji normalization (using `emoji` package)
 
-### 🤖 Transformer Input Processing
+### Transformer Input Processing
 - BERT subword tokenization
 - Attention masks and padding
 - Uniform input formatting for deep models
 
 ---
 
-## 🧪 Models Used
+## Models Used
 
-### 🔹 Lexicon-Based
-- **VADER**: Lightweight rule-based model for polarity scoring
+### Lexicon-Based
+- VADER: Lightweight rule-based model for polarity scoring
 
-### 🔹 Unsupervised Learning
-- **K-Means**: Clustered sentiment-rich post vectors (TF-IDF) to create pseudo-labels
+### Unsupervised Learning
+- K-Means: Clustered sentiment-rich post vectors (TF-IDF) to create pseudo-labels
 
-### 🔹 Transformer-Based Deep Learning
-- **BERT (`bert-base-uncased`)**
+### Transformer-Based Deep Learning
+- BERT (`bert-base-uncased`)
   - Context-aware embedding
   - Fine-tuned on pseudo-labeled Reddit data
   - Achieved 85–90% accuracy
 
-- **Gemini**
+- Gemini
   - Efficient transformer architecture (used in place of LLaMA)
   - Fine-tuned with mixed precision & gradient checkpointing
   - Lower memory footprint, good for deployment
 
 ---
 
-## ✅ Results
+## Results
 
 | Model   | Type       | Accuracy | Notes |
 |---------|------------|----------|-------|
@@ -95,35 +95,35 @@ Two domains were analyzed:
 | BERT    | Transformer| 85–90%   | Best performance, handles context and sarcasm |
 | Gemini  | Transformer| ~80–85%  | Lightweight alternative to BERT |
 
-- **Visualizations**: Sentiment trends, confusion matrices, accuracy/loss curves.
-- **Findings**:
+- Visualizations: Sentiment trends, confusion matrices, accuracy/loss curves.
+- Findings:
   - Neutral sentiment dominated across both domains.
   - Positive sentiment reflected strong brand loyalty.
   - Sarcasm and ambiguity remained challenges.
 
 ---
 
-## 📈 Tools & Technologies
+## Tools and Technologies
 
-### 🐍 Languages & Frameworks
+### Languages and Frameworks
 - Python  
 - TensorFlow, PyTorch  
 - Scikit-learn, Transformers (Hugging Face)
 
-### 🧰 Libraries
+### Libraries
 - Data Collection: `PRAW`, `snscrape`
 - NLP: `nltk`, `spaCy`, `emoji`
 - Modeling: `transformers`, `scikit-learn`, `tensorflow`
 - Visualization: `matplotlib`, `seaborn`, `plotly`
 
-### ☁️ Platforms
-- **Google Colab / Jupyter** – Training and experimentation  
-- **AWS** – For scalable deployment  
-- **Tableau / Power BI** – Dashboard visualization  
+### Platforms
+- Google Colab / Jupyter – Training and experimentation  
+- AWS – For scalable deployment  
+- Tableau / Power BI – Dashboard visualization  
 
 ---
 
-## 📊 Expected Output
+## Expected Output
 
 - Trained sentiment classification model (BERT and Gemini variants)
 - Visualization dashboards for:
@@ -134,23 +134,22 @@ Two domains were analyzed:
 
 ---
 
-## 🚀 Future Work
+## Future Work
 
 - Improve sarcasm detection using models like RoBERTa, T5
 - Expand to additional platforms (Twitter, Instagram)
-- Add domain-specific fine-tuning for healthcare/finance/etc.
+- Add domain-specific fine-tuning for healthcare, finance, etc.
 - Use active learning or semi-supervised methods to improve label quality
 - Develop lightweight APIs and deploy on edge devices
 
 ---
 
-## 📬 Contact
+## Contact
 
 For questions, collaboration, or feedback:  
-📧 Parnavi Sen — [parnavi.sen.ps@gmail.com](mailto:parnavi.sen.ps@gmail.com)  
-📧 Navneet Parab — [navneetparabb20@gmail.com](mailto:navneetparabb20@gmail.com)
+Parnavi Sen — [parnavi.sen.ps@gmail.com](mailto:parnavi.sen.ps@gmail.com)  
+Navneet Parab — [navneetparabb20@gmail.com](mailto:navneetparabb20@gmail.com)
 
 ---
-
 
 
