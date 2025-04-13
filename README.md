@@ -1,79 +1,156 @@
-# Sentiment_Analysis_Twitter_Reddit 
-## Monitoring Public Sentiment on Brands Using Social Media Data for Strategic Insights 
-## Project Overview
-Public sentiment significantly impacts a brand's reputation and business success. However, many brands lack the tools to monitor and analyze the massive volumes of real-time feedback available on social media. This project focuses on leveraging social media data from platforms like Twitter and Reddit to monitor public sentiment, identify trends, and provide strategic insights for brands to improve decision-making and respond proactively. 
-## Key Features and Goals
-### Project Goals
-1. Collect, clean, and preprocess large datasets from Twitter and Reddit.
-2. Build and evaluate a sentiment analysis model to classify public opinion into Positive, Neutral, or Negative categories.
-3. Leverage Large Language Models (LLMs) to:
-- Perform context-aware sentiment analysis.
-- Identify nuanced opinions and mixed sentiments.
-- Summarize sentiment trends and extract key themes.
-4. Create insightful visualizations to track sentiment trends over time.
-## Dataset Details
-The dataset consists of Reddit posts scraped using PRAW (Python Reddit API Wrapper). It includes real-time Reddit data with the following variables:
+# Sentiment Analysis on Twitter and Reddit
 
-- Subreddit: The community where the post was published.
-- Timestamp: The time when the post was created.
-- Title:  The title of the Reddit post.
-- Body: The full text content of the post.
-- Comments: The first comment on the post.
-- Number of Upvotes: The number of upvotes received.
-- Upvote Ratio: The ratio of upvotes to downvotes.
-### Preprocessing Steps
-#### Text Clean-Up
-- Standardize text to lowercase.
-- Remove special characters and numbers.
-- Removed stopwards
-#### NLP Breakdown
-- Tokenization: Splitting text into individual words or tokens.
-- Lemmatization: Reducing words to their base or root form.
-- Part of Speech (POS) Tagging: Identifying grammatical roles of words.
+### Monitoring Public Sentiment on Brands Using Social Media Data for Strategic Insights  
+**Contributors:** Parnavi Sen, Navneet Parab  
+**Date:** April 2025  
 
-## Machine Learning Implementations
-### Traditional Machine Learning Models
-#### Vader Implementations
-- Applied VADER, a rule-based lexicon approach for sentiment classification, especially effective for short social media texts.
-- Useful for quick, lightweight sentiment classification before applying more complex deep learning models.
-#### K-Means Clustering
-- Applied unsupervised learning to group similar posts based on sentiment and emerging discussion themes.
-- Helps in detecting latent sentiment groups and customer concerns without prior labels.
-### Deep Learning and Transformer-Based Models
-#### BERT (bert-base-uncased) Implementation
-- A transformer-based model capable of capturing contextual sentiment by analyzing bidirectional word relationships.
+---
 
-- Tokenization is performed using BERT tokenizer, which splits words into subwords for better handling of out-of-vocabulary words.
+## 🧠 Project Overview
 
-- Padding is applied to ensure all sequences have uniform lengths for batch processing.
+Public sentiment significantly impacts a brand’s reputation, market value, and customer trust. Yet, many brands lack the tools to analyze real-time feedback shared by users on platforms like Twitter and Reddit. This project presents a robust NLP pipeline to **monitor, classify, and visualize sentiment trends** for brands using social media data.
 
-- Outperforms traditional models in understanding sentiment variations, sarcasm, and mixed opinions.
-#### LLaMA (Large Language Model Meta AI) Implementation
-- A large-scale transformer-based model designed for nuanced sentiment understanding.
+We leverage both traditional models and state-of-the-art transformer-based deep learning architectures to understand nuanced, context-aware sentiment and provide actionable insights to brands for product and communication strategy.
 
-- Excels at processing longer social media discussions and identifying subtle sentiment cues.
+---
 
-- Particularly useful for domain-specific sentiment classification by fine-tuning on Reddit-based datasets.
+## 🎯 Project Goals
 
-- Enhances performance by capturing context-dependent sentiments that traditional models struggle with.
-## Expected Output
-- Sentiment Analysis Model: A trained and validated model to classify text sentiment.
-- Visualization Dashboards: Graphs and charts showcasing sentiment trends, keyword frequency, and emerging themes.
-- Actionable Insights: Provide brands with tools to track public opinion and optimize marketing campaigns while addressing customer concerns.
-## Tools and Technologies
-### Programming Languages
-- Python: Used for data collection, preprocessing, analysis, and model development.
-### Libraries
-- Data Collection: snscrape, PRAW.
-- Preprocessing & Analysis: Pandas, NumPy, nltk, spaCy.
-- Modeling: transformers, Scikit-learn, TensorFlow, PyTorch.
-- Visualization: Matplotlib, Seaborn, Plotly.
-- Deployment: AWS.
-### Platforms
-- Google Colab or Jupyter Notebook for experimentation.
-- Tableau or Power BI for advanced visualizations.
-- AWS for hosting the application.
-## Contact
-For questions, suggestions, or feedback, please reach out to:
-- Parnavi: parnavi.sen.ps@gmail.com
-- Navneet: navneetparabb20@gmail.com
+- Collect and preprocess large-scale datasets from Twitter and Reddit.
+- Apply lexicon-based, clustering, and transformer models for sentiment classification.
+- Compare model performance (accuracy, interpretability, efficiency).
+- Use LLMs (BERT, Gemini) to:
+  - Detect mixed or ambiguous sentiment.
+  - Extract contextual sentiment cues.
+  - Summarize trends and topic clusters.
+- Visualize sentiment trends over time with interactive dashboards.
+- Provide actionable insights to enhance brand strategy and engagement.
+
+---
+
+## 🗃️ Dataset Details
+
+The Reddit dataset was collected using the PRAW (Python Reddit API Wrapper) and includes:
+
+- `Subreddit`: Community where the post originated.
+- `Timestamp`: Post creation date and time.
+- `Title` and `Body`: Main textual content.
+- `First Comment`: Top user comment on the post.
+- `Upvotes` and `Upvote Ratio`: Measures of community approval.
+- `Number of Comments`: Engagement metric.
+
+Two domains were analyzed:
+- **Athletic Apparel Brands**
+- **Technology Companies**
+
+---
+
+## 🧹 Preprocessing Pipeline
+
+### 🔤 Text Clean-Up
+- Lowercased text
+- Removed punctuation, special characters, numbers
+- Removed stopwords (using NLTK)
+
+### 🧠 NLP Tasks
+- Tokenization  
+- Lemmatization  
+- POS tagging  
+- Emoji normalization (using `emoji` package)
+
+### 🤖 Transformer Input Processing
+- BERT subword tokenization
+- Attention masks and padding
+- Uniform input formatting for deep models
+
+---
+
+## 🧪 Models Used
+
+### 🔹 Lexicon-Based
+- **VADER**: Lightweight rule-based model for polarity scoring
+
+### 🔹 Unsupervised Learning
+- **K-Means**: Clustered sentiment-rich post vectors (TF-IDF) to create pseudo-labels
+
+### 🔹 Transformer-Based Deep Learning
+- **BERT (`bert-base-uncased`)**
+  - Context-aware embedding
+  - Fine-tuned on pseudo-labeled Reddit data
+  - Achieved 85–90% accuracy
+
+- **Gemini**
+  - Efficient transformer architecture (used in place of LLaMA)
+  - Fine-tuned with mixed precision & gradient checkpointing
+  - Lower memory footprint, good for deployment
+
+---
+
+## ✅ Results
+
+| Model   | Type       | Accuracy | Notes |
+|---------|------------|----------|-------|
+| VADER   | Rule-based | –        | Used for pseudo-labels |
+| K-Means | Clustering | –        | Unsupervised label generation |
+| BERT    | Transformer| 85–90%   | Best performance, handles context and sarcasm |
+| Gemini  | Transformer| ~80–85%  | Lightweight alternative to BERT |
+
+- **Visualizations**: Sentiment trends, confusion matrices, accuracy/loss curves.
+- **Findings**:
+  - Neutral sentiment dominated across both domains.
+  - Positive sentiment reflected strong brand loyalty.
+  - Sarcasm and ambiguity remained challenges.
+
+---
+
+## 📈 Tools & Technologies
+
+### 🐍 Languages & Frameworks
+- Python  
+- TensorFlow, PyTorch  
+- Scikit-learn, Transformers (Hugging Face)
+
+### 🧰 Libraries
+- Data Collection: `PRAW`, `snscrape`
+- NLP: `nltk`, `spaCy`, `emoji`
+- Modeling: `transformers`, `scikit-learn`, `tensorflow`
+- Visualization: `matplotlib`, `seaborn`, `plotly`
+
+### ☁️ Platforms
+- **Google Colab / Jupyter** – Training and experimentation  
+- **AWS** – For scalable deployment  
+- **Tableau / Power BI** – Dashboard visualization  
+
+---
+
+## 📊 Expected Output
+
+- Trained sentiment classification model (BERT and Gemini variants)
+- Visualization dashboards for:
+  - Sentiment over time
+  - Top keywords per sentiment class
+  - Emerging discussion themes
+- Strategic insights to help brands respond to public opinion
+
+---
+
+## 🚀 Future Work
+
+- Improve sarcasm detection using models like RoBERTa, T5
+- Expand to additional platforms (Twitter, Instagram)
+- Add domain-specific fine-tuning for healthcare/finance/etc.
+- Use active learning or semi-supervised methods to improve label quality
+- Develop lightweight APIs and deploy on edge devices
+
+---
+
+## 📬 Contact
+
+For questions, collaboration, or feedback:  
+📧 Parnavi Sen — [parnavi.sen.ps@gmail.com](mailto:parnavi.sen.ps@gmail.com)  
+📧 Navneet Parab — [navneetparabb20@gmail.com](mailto:navneetparabb20@gmail.com)
+
+---
+
+
+
