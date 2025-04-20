@@ -3,6 +3,7 @@
 ### Monitoring Public Sentiment on Brands Using Social Media Data for Strategic Insights  
 **Contributors:** Parnavi Sen, Navneet Parab  
 **Date:** April 2025  
+![WhatsApp Image 2025-04-17 at 23 17 18_e23c170c](https://github.com/user-attachments/assets/4e4af7af-0ee8-4210-b157-7d0eb43e326e)
 
 ---
 
